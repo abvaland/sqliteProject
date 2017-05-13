@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FF6347"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <View
+            android:id="@+id/deivder"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#FFFFFF"
+            ></View>
+
+        <TextView
+            android:text="1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/txtRollno"
+            android:textSize="24sp"
+            android:layout_below="@id/deivder"
+            android:textStyle="normal|bold"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:id="@+id/linear"
+            android:layout_below="@id/deivder"
+            android:layout_toRightOf="@id/txtRollno"
+            >
+
+            <TextView
+                android:text="Ajay"
+                android:textSize="24sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/txtStudName" />
+
+            <TextView
+                android:text="MCA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:id="@+id/txtStudStd" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/imgBtnEdit"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_edit"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="#FF6347"
+            android:layout_below="@id/deivder"
+            android:scaleType="fitXY" />
+
+    </RelativeLayout>
+
+</LinearLayout>
